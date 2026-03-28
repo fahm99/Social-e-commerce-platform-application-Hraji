@@ -1,0 +1,243 @@
+import '../models/listing_model.dart';
+
+typedef Listing = ListingModel;
+typedef Location = ListingLocation;
+
+final List<ListingModel> listingsData = [
+  ListingModel(
+    id: 'lst_001',
+    title: 'شاليه للإيجار اليومي في بريدة',
+    description:
+        'شاليه فاخر للإيجار اليومي، يتكون من مجلس ودورة مياه ومسبح خاص، موقع مميز قريب من الخدمات',
+    price: 444,
+    currency: 'SAR',
+    priceNegotiable: true,
+    categoryId: 'cat_002',
+    subcategoryId: 'sub_005',
+    userId: 'usr_001',
+    location: ListingLocation(
+      city: 'بريدة',
+      region: 'القصيم',
+      district: 'حي النخيل',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-28T10:00:00Z'),
+    updatedAt: DateTime.parse('2026-03-28T10:00:00Z'),
+    views: 234,
+    likes: 18,
+    commentsCount: 2,
+    isFeatured: false,
+    condition: 'جديد',
+  ),
+  ListingModel(
+    id: 'lst_002',
+    title: 'مرخ جنوبي طازج متوفر في الرياض',
+    description:
+        'مرخ جنوبي أصلي من جازان، جودة عالية، طازج متوفر للشحن أو الاستلام من الرياض',
+    price: 350,
+    currency: 'SAR',
+    priceNegotiable: false,
+    categoryId: 'cat_005',
+    subcategoryId: 'sub_014',
+    userId: 'usr_003',
+    location: ListingLocation(
+      city: 'الرياض',
+      region: 'الرياض',
+      district: 'حي الصحافة',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1560807707-8cc77767d783?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-28T12:30:00Z'),
+    updatedAt: DateTime.parse('2026-03-28T12:30:00Z'),
+    views: 567,
+    likes: 42,
+    commentsCount: 3,
+    isFeatured: true,
+    condition: 'مستعمل',
+  ),
+  ListingModel(
+    id: 'lst_003',
+    title: 'كاميرا مراقبة على الطاقة الشمسية',
+    description:
+        'كاميرا لاسلكية تعمل بالطاقة الشمسية، رؤية ليلية، مقاومة للماء، تطبيق ذكي للمراقبة',
+    price: 450,
+    currency: 'SAR',
+    priceNegotiable: true,
+    categoryId: 'cat_003',
+    subcategoryId: 'sub_010',
+    userId: 'usr_002',
+    location: ListingLocation(
+      city: 'الرس',
+      region: 'القصيم',
+      district: 'حي النقرة',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-28T14:00:00Z'),
+    updatedAt: DateTime.parse('2026-03-28T14:00:00Z'),
+    views: 189,
+    likes: 12,
+    commentsCount: 3,
+    isFeatured: false,
+    condition: 'جديد',
+  ),
+  ListingModel(
+    id: 'lst_004',
+    title: 'سيارة مرسيدس S-Class موديل 2023 مستعملة',
+    description:
+        'مرسيدس S500 موديل 2023، ماشية 15,000 كم، فل كامل، ضمان الوكالة، صيانة دورية',
+    price: 120000,
+    currency: 'SAR',
+    priceNegotiable: true,
+    categoryId: 'cat_001',
+    subcategoryId: 'sub_001',
+    userId: 'usr_001',
+    location: ListingLocation(
+      city: 'جدة',
+      region: 'مكة المكرمة',
+      district: 'حي الروضة',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1617531653520-4893f7bbf978?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1618843479484-120f59103d72?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-27T09:00:00Z'),
+    updatedAt: DateTime.parse('2026-03-28T08:00:00Z'),
+    views: 1205,
+    likes: 89,
+    commentsCount: 15,
+    isFeatured: true,
+    condition: 'مستعمل',
+  ),
+  ListingModel(
+    id: 'lst_005',
+    title: 'كنبة أنتيك كلاسيكية للبيع',
+    description:
+        'كنبة أنتيكية أصلية، خشب زان، تنجيد يدوي فاخر، نظيفة جداً، سبب البيع: الانتقال',
+    price: 1500,
+    currency: 'SAR',
+    priceNegotiable: true,
+    categoryId: 'cat_004',
+    subcategoryId: 'sub_011',
+    userId: 'usr_002',
+    location: ListingLocation(
+      city: 'الرياض',
+      region: 'الرياض',
+      district: 'حي العليا',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1550254478-ead40cc54513?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-26T16:00:00Z'),
+    updatedAt: DateTime.parse('2026-03-27T10:00:00Z'),
+    views: 432,
+    likes: 24,
+    commentsCount: 8,
+    isFeatured: false,
+    condition: 'مستعمل',
+  ),
+  ListingModel(
+    id: 'lst_006',
+    title: 'iPhone 14 Pro Max 256GB Deep Purple',
+    description:
+        'آيفون 14 برو ماكس، لون بنفسجي، سعة 256 جيجا، بحالة الوكالة، مع الكرتون وكامل الملحقات',
+    price: 4000,
+    currency: 'SAR',
+    priceNegotiable: false,
+    categoryId: 'cat_003',
+    subcategoryId: 'sub_008',
+    userId: 'usr_004',
+    location: ListingLocation(
+      city: 'الدمام',
+      region: 'الشرقية',
+      district: 'حي الشاطئ',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1696446701796-da61225697cc?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-25T11:00:00Z'),
+    updatedAt: DateTime.parse('2026-03-28T15:00:00Z'),
+    views: 892,
+    likes: 56,
+    commentsCount: 12,
+    isFeatured: true,
+    condition: 'مستعمل',
+  ),
+  ListingModel(
+    id: 'lst_007',
+    title: 'فيلا دوبلكس للبيع في أبها',
+    description:
+        'فيلا فاخرة 3 أدوار، مساحة 500 متر، 6 غرف نوم، مسبح خاص، إطلالة رائعة على الجبال',
+    price: 2500000,
+    currency: 'SAR',
+    priceNegotiable: true,
+    categoryId: 'cat_002',
+    subcategoryId: 'sub_006',
+    userId: 'usr_005',
+    location: ListingLocation(
+      city: 'أبها',
+      region: 'عسير',
+      district: 'حي المنسك',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-24T08:00:00Z'),
+    updatedAt: DateTime.parse('2026-03-28T12:00:00Z'),
+    views: 2103,
+    likes: 145,
+    commentsCount: 23,
+    isFeatured: true,
+    condition: 'جديد',
+  ),
+  ListingModel(
+    id: 'lst_008',
+    title: 'ببغاء كاسكو أفريقي متكلم',
+    description:
+        'كاسكو أفريقي عمر 3 سنوات، يتكلم عدة كلمات، صحته ممتازة، مع القفص والأكل',
+    price: 2500,
+    currency: 'SAR',
+    priceNegotiable: true,
+    categoryId: 'cat_005',
+    subcategoryId: 'sub_014',
+    userId: 'usr_005',
+    location: ListingLocation(
+      city: 'أبها',
+      region: 'عسير',
+      district: 'حي المحالة',
+    ),
+    images: [
+      'https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=800&h=600&fit=crop'
+    ],
+    status: 'active',
+    createdAt: DateTime.parse('2026-03-28T16:00:00Z'),
+    updatedAt: DateTime.parse('2026-03-28T16:00:00Z'),
+    views: 156,
+    likes: 34,
+    commentsCount: 5,
+    isFeatured: false,
+    condition: 'مستعمل',
+  ),
+];
