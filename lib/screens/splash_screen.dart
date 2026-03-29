@@ -73,15 +73,7 @@ class _SplashScreenState extends State<SplashScreen>
                 fit: BoxFit.contain,
               ),
               const SizedBox(height: 24),
-              Text(
-                'حراجي',
-                style: GoogleFonts.cairo(
-                  fontSize: 52,
-                  fontWeight: FontWeight.w900,
-                  color: AppTheme.primaryRed,
-                  height: 1.2,
-                ),
-              ),
+         
             ],
           ),
         ),

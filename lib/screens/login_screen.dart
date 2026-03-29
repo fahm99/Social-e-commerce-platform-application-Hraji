@@ -29,14 +29,7 @@ class LoginScreen extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                     const SizedBox(height: 8),
-                    Text(
-                      'حراجي',
-                      style: GoogleFonts.cairo(
-                        fontSize: 32,
-                        fontWeight: FontWeight.w900,
-                        color: AppTheme.primaryRed,
-                      ),
-                    ),
+                
                   ],
                 ),
               ),
